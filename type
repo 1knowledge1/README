@@ -22,9 +22,6 @@ int main() {
                     << " )"
                     <<endl;
 
-
-
-
             cout << "signed char: " <<sizeof(signed char)
                     <<" ( "
                     <<(int)numeric_limits <signed char>::min()
@@ -40,7 +37,6 @@ int main() {
                     <<(int)numeric_limits <char>::max()
                     << " )"
                     <<endl;
-
 
             cout << "char16_t: " <<sizeof(char16_t)
                     <<" ( "
@@ -58,7 +54,6 @@ int main() {
                     << " )"
                     <<endl;
 
-
             cout << "wchar_t: " <<sizeof(wchar_t)
                     <<" ( "
                     <<numeric_limits <wchar_t>::min()
@@ -69,9 +64,9 @@ int main() {
 
             cout << "int: " <<sizeof(int)
                     <<" ( "
-                    <<numeric_limits <char32_t>::min()
+                    <<numeric_limits <int>::min()
                     <<" , "
-                    <<numeric_limits <char32_t>::max()
+                    <<numeric_limits <int>::max()
                     << " )"
                     <<endl;
 
@@ -174,7 +169,7 @@ char: 1 ( -128 , 127 )
 char16_t: 2 ( 0 , 65535 )
 char32_t: 4 ( 0 , 4294967295 )
 wchar_t: 4 ( -2147483648 , 2147483647 )
-int: 4 ( 0 , 4294967295 )
+int: 4 ( -2147483648 , 2147483647 )
 unsigned int: 4 ( 0 , 4294967295 )
 short: 2 ( -32768 , 32767 )
 unsigned short: 2 ( 0 , 65535 )
