@@ -22,6 +22,9 @@ int main() {
                     << " )"
                     <<endl;
 
+
+
+
             cout << "signed char: " <<sizeof(signed char)
                     <<" ( "
                     <<(int)numeric_limits <signed char>::min()
@@ -128,6 +131,7 @@ int main() {
                     << " )"
                     <<endl;
 
+
             cout << "float: " <<sizeof(float)
                     <<" ( "
                     <<numeric_limits <float>::min()
@@ -152,11 +156,16 @@ int main() {
                     << " )"
                     <<endl;
 
+    cout << "void: special type "<<endl;
+
+    cout << "nullptr_t: " <<sizeof(nullptr_t)<<endl;
 
     return 0;
 }
 
+
 '''
+
 
 bool: 1 ( 0 , 1 )
 unsigned char: 1 ( 0 , 255 )
@@ -176,3 +185,5 @@ unsigned long long: 8 ( 0 , 18446744073709551615 )
 float: 4 ( 1.17549e-38 , 3.40282e+38 )
 double: 8 ( 2.22507e-308 , 1.79769e+308 )
 long double: 16 ( 3.3621e-4932 , 1.18973e+4932 )
+void: special type 
+nullptr_t: 8
